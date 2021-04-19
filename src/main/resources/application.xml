@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:concext="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/tx
+        http://www.springframework.org/schema/tx/spring-tx.xsd
+        http://www.springframework.org/schema/mvc
+        http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+    <context:property-placeholder location="classpath:db.properties"/>
+    <context:component-scan base-package="com.zhiyou"/>
+
+    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+        <property name="driverClassName" value="${jdbc.driverClassName}"></property>
+        <property name="url" value="${jdbc.url}"></property>
+        <property name="username" value="${jdbc.username}"></property>
+        <property name="password" value="${jdbc.password}"></property>
+    </bean>
+
+    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+        <property name="dataSource" ref="dataSource"></property>
+    </bean>
+
+    <!-- mybatis -->
+    <bean id="sessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <property name="configLocation" value="classpath:mybatis-config.xml"/>
+    </bean>
+    <!-- 扫描mapper
+        mybatis自己不再加载映射文件,而是交给spring去扫描
+        spring扫描后就会在容器中创建出改接口对应的代理对象
+     -->
+    <bean id="scannerConfigurer" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="basePackage" value="com.zhiyou.mapper"/>
+        <property name="sqlSessionFactoryBeanName" value="sessionFactory"/>
+    </bean>
+    <!--  事务管理器  -->
+    <bean id="txManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+    <!--事务注解生效-->
+    <tx:annotation-driven transaction-manager="txManager"/>
+
+<!--    &lt;!&ndash; =========================== Shiro配置 ============================== &ndash;&gt;-->
+<!--    &lt;!&ndash; 0 自定义域类 &ndash;&gt;-->
+<!--    <bean id="userAuthorRealm" class="com.zhiyou.realm.UserAuthorRealm"></bean>-->
+<!--    &lt;!&ndash; 1 安全管理器 &ndash;&gt;-->
+<!--    <bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">-->
+<!--        <property name="realm" ref="userAuthorRealm"></property>-->
+<!--    </bean>-->
+<!--    &lt;!&ndash; 2 Shiro拦截器 &ndash;&gt;-->
+<!--    <bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">-->
+<!--        <property name="securityManager" ref="securityManager"/>-->
+<!--        &lt;!&ndash; 没有认证,跳转登录页面 &ndash;&gt;-->
+<!--        <property name="loginUrl" value="login.jsp"/>-->
+<!--        &lt;!&ndash; 没有权限,跳转error页面 &ndash;&gt;-->
+<!--        <property name="unauthorizedUrl" value="/error.jsp"/>-->
+<!--        &lt;!&ndash; 定义放行路径,拦截路径 &ndash;&gt;-->
+<!--        <property name="filterChainDefinitions">-->
+<!--            <value>-->
+<!--                /assets/** = anon-->
+<!--                /Css/** = anon-->
+<!--                /front/** = anon-->
+<!--                /Images/** = anon-->
+<!--                /Js/** = anon-->
+
+<!--                /user/login.do = anon-->
+<!--                /user/login.do#1/2 = anon-->
+<!--                /user/logins.do = anon-->
+<!--                /user/exit.do = logout-->
+<!--                /index.jsp = anon-->
+<!--                /login.jsp = anon-->
+
+<!--                &lt;!&ndash; roles["mgr","admin"] 是同时需要拥有mgr以及admin两个角色才行&ndash;&gt;-->
+<!--                /**/delete.do = authc,perms["/delete"]-->
+<!--                /**/add.do = authc,perms["/add"]-->
+<!--                /**/update.do = authc,perms["/update"]-->
+<!--                /**/*.do = authc-->
+<!--                /** = authc-->
+<!--            </value>-->
+<!--        </property>-->
+
+<!--    </bean>-->
+
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <property name="configLocation" value="classpath:mybatis-config.xml"/>
+        <!-- 插件 -->
+        <property name="plugins">
+            <array>
+                <bean id="pageHelper" class="com.github.pagehelper.PageHelper">
+                    <property name="properties">
+                        <value>
+                            <!--使用的数据库类型-->
+                            dialect=oracle
+                        </value>
+                    </property>
+                </bean>
+            </array>
+        </property>
+    </bean>
+
+    <!-- ========================= Redis连接池 ===================================-->
+    <bean id="jedisPoolConfig" class="redis.clients.jedis.JedisPoolConfig">
+        <!-- 最大连接数 -->
+        <property name="maxTotal" value="30" />
+        <!-- 最大空闲连接数 -->
+        <property name="maxIdle" value="10" />
+        <!-- 每次释放连接的最大数目 -->
+        <property name="numTestsPerEvictionRun" value="1024" />
+        <!-- 释放连接的扫描间隔（毫秒） -->
+        <property name="timeBetweenEvictionRunsMillis" value="30000" />
+        <!-- 连接最小空闲时间 -->
+        <property name="minEvictableIdleTimeMillis" value="1800000" />
+        <!-- 连接空闲多久后释放, 当空闲时间>该值 且 空闲连接>最大空闲连接数 时直接释放 -->
+        <property name="softMinEvictableIdleTimeMillis" value="10000" />
+        <!-- 获取连接时的最大等待毫秒数,小于零:阻塞不确定的时间,默认-1 -->
+        <property name="maxWaitMillis" value="1500" />
+        <!-- 在获取连接的时候检查有效性, 默认false -->
+        <property name="testOnBorrow" value="false" />
+        <!-- 在空闲时检查有效性, 默认false -->
+        <property name="testWhileIdle" value="true" />
+        <!-- 连接耗尽时是否阻塞, false报异常,ture阻塞直到超时, 默认true -->
+        <property name="blockWhenExhausted" value="false" />
+    </bean>
+    <!-- ================================ Redis单机 通过连接池 ================================= -->
+    <bean id="jedisPool" class="redis.clients.jedis.JedisPool" destroy-method="close">
+        <constructor-arg name="poolConfig" ref="jedisPoolConfig"></constructor-arg>
+        <constructor-arg name="host" value="192.168.150.160"></constructor-arg>
+        <constructor-arg name="port" value="6379"></constructor-arg>
+    </bean>
+</beans>
