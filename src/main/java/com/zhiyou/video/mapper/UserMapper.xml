@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zhiyou.video.mapper.UserMapper" >
+    <select id="findUserByLogin" parameterType="String">
+        select * from "user" where "email"=#{email} and "password"=#{password}
+    </select>
+    <insert id="findUserByRegist" parameterType="String">
+        insert into "user" ("id","email","password") values (4,#{email},#{password})
+    </insert>
+</mapper>
