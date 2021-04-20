@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zhiyou.video.mapper.VideoMapper" >
+    <resultMap id="BaseResultMap" type="com.zhiyou.video.model.Video" >
+        <id column="ID" property="id" />
+        <result column="VIDEO_TITLE" property="video_title" />
+        <result column="SPEAKER_ID" property="speaker_id" />
+        <result column="COURSE_ID" property="course_id" />
+        <result column="VIDEO_LENGTH" property="video_length" />
+        <result column="VIDEO_IMAGE_URL" property="video_image_url" />
+        <result column="VIDEO_URL" property="video_url" />
+        <result column="VIDEO_DESCR" property="video_descr" />
+        <result column="INSERT_TIME" property="insert_time" />
+        <result column="UPDATE_TIME" property="update_time" />
+        <result column="VIDEO_PLAY_TIMES" property="video_play_times" />
+    </resultMap>
+
+    <sql id="Base_Column_List" >
+    ID,VIDEO_TITLE,SPEAKER_ID,COURSE_ID,VIDEO_LENGTH,VIDEO_IMAGE_URL,VIDEO_URL,VIDEO_DESCR,INSERT_TIME,UPDATE_TIME,VIDEO_PLAY_TIMES
+    </sql>
+
+    <select id="findAll" resultMap="BaseResultMap">
+        SELECT
+            V.ID,
+            V.VIDEO_TITLE,
+            V.VIDEO_LENGTH,
+            V.VIDEO_IMAGE_URL,
+            V.VIDEO_URL,
+            V.VIDEO_DESCR,
+            V.INSERT_TIME,
+            V.UPDATE_TIME,
+            V.VIDEO_PLAY_TIMES,
+            S.SPEAKER_NAME,
+            C.COURSE_NAME
+        FROM
+            VIDEO V,
+            SPEAKER S,
+            COURSE C
+        WHERE
+            V.SPEAKER_ID = S.ID
+        AND V.COURSE_ID = C.ID
+        ORDER BY V.ID
+    </select>
+
+    <select id="findVideoById" parameterType="Integer" resultType="Video">
+        SELECT <include refid="Base_Column_List"/> FROM VIDEO WHERE ID = #{id}
+    </select>
+
+    <update id="updateOne" parameterType="Video">
+        update
+            VIDEO
+        set
+            VIDEO_TITLE = #{video_title},SPEAKER_ID = #{speaker_id},COURSE_ID = #{course_id},VIDEO_LENGTH = #{video_length},VIDEO_IMAGE_URL = #{video_image_url},
+            VIDEO_URL = #{video_url},VIDEO_DESCR = #{video_descr},VIDEO_PLAY_TIMES = #{video_play_times}
+        WHERE
+            ID = #{id}
+    </update>
+
+
+
+</mapper>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zhiyou.video.mapper.CourseMapper" >
+    <resultMap id="BaseResultMap" type="com.zhiyou.video.model.Course" >
+        <id column="ID" property="id" />
+        <result column="COURSE_NAME" property="course_name" />
+        <result column="COURSE_DESCR" property="course_descr" />
+        <result column="INSERT_TIME" property="insert_time" />
+        <result column="UPDATE_TIME" property="update_time" />
+        <result column="SUBJECT_ID" property="subject_id" />
+    </resultMap>
+
+    <sql id="Base_Column_List" >
+    ID,COURSE_NAME,COURSE_DESCR,INSERT_TIME,UPDATE_TIME,SUBJECT_ID
+    </sql>
+
+    <select id="findAll" resultMap="BaseResultMap">
+        SELECT
+            ID,
+            COURSE_NAME,
+            COURSE_DESCR,
+            INSERT_TIME,
+            UPDATE_TIME,
+            SUBJECT_ID
+        FROM
+            COURSE
+    </select>
+
+</mapper>

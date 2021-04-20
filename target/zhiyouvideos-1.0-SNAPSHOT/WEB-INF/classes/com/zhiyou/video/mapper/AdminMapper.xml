@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zhiyou.video.mapper.AdminMapper" >
+    <resultMap id="BaseResultMap" type="com.zhiyou.video.model.Admin" >
+        <id column="ID" property="id" jdbcType="DECIMAL" />
+        <result column="LOGIN_NAME" property="loginName" jdbcType="OTHER" />
+        <result column="LOGIN_PWD" property="loginPwd" jdbcType="OTHER" />
+    </resultMap>
+    <sql id="Base_Column_List" >
+    ID,LOGIN_NAME,LOGIN_PWD
+    </sql>
+
+    <select id="login" resultType="Admin">
+        select
+        <include refid="Base_Column_List" />
+        from ADMIN
+        where LOGIN_NAME = #{loginName} and LOGIN_PWD = #{loginPwd}
+    </select>
+</mapper>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zhiyou.video.mapper.SpeakerMapper" >
+    <resultMap id="BaseResultMap" type="com.zhiyou.video.model.Speaker" >
+        <id column="ID" property="id" />
+        <result column="SPEAKER_NAME" property="speaker_name" />
+        <result column="SPEAKER_JOB" property="speaker_job" />
+        <result column="SPEAKER_HEAD_URL" property="speaker_head_url" />
+        <result column="SPEAKER_DESCR" property="speaker_descr" />
+        <result column="INSERT_TIME" property="insert_time" />
+        <result column="UPDATE_TIME" property="update_time" />
+    </resultMap>
+
+    <sql id="Base_Column_List" >
+    ID,SPEAKER_NAME,SPEAKER_JOB,SPEAKER_HEAD_URL,SPEAKER_DESCR,INSERT_TIME,UPDATE_TIME
+    </sql>
+
+    <select id="findAll" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from SPEAKER
+        ORDER BY ID
+    </select>
+</mapper>

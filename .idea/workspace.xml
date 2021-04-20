@@ -1,43 +1,364 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="zhiyouvideos:war exploded" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5b39e6e-99e4-4b3a-8161-00e00808a6f2" name="Default Changelist" comment="" />
+    <list default="true" id="b5b39e6e-99e4-4b3a-8161-00e00808a6f2" name="Default Changelist" comment="后台第一次上传">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/zhiyouvideos.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhiyou/video/controller/AdminController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhiyou/video/controller/CourseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhiyou/video/controller/SpeakerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhiyou/video/controller/VideoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhiyou/video/mapper/AdminMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhiyou/video/mapper/AdminMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhiyou/video/mapper/CourseMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhiyou/video/mapper/CourseMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhiyou/video/mapper/SpeakerMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhiyou/video/mapper/SpeakerMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhiyou/video/mapper/VideoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhiyou/video/mapper/VideoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhiyou/video/model/Course.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhiyou/video/model/Speaker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhiyou/video/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhiyou/video/model/Video.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhiyou/video/service/AdminControllerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhiyou/video/service/CourseService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhiyou/video/service/SpeakerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhiyou/video/service/VideoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhiyou/video/service/impl/AdminControllerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhiyou/video/service/impl/CourseServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhiyou/video/service/impl/SpeakerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhiyou/video/service/impl/VideoServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/META-INF/zhiyouvideos.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/application.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zhiyou/video/controller/AdminController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zhiyou/video/controller/CourseController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zhiyou/video/controller/SpeakerController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zhiyou/video/controller/VideoController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zhiyou/video/mapper/AdminMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zhiyou/video/mapper/AdminMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zhiyou/video/mapper/CourseMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zhiyou/video/mapper/CourseMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zhiyou/video/mapper/SpeakerMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zhiyou/video/mapper/SpeakerMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zhiyou/video/mapper/VideoMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zhiyou/video/mapper/VideoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zhiyou/video/model/Admin.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zhiyou/video/model/Course.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zhiyou/video/model/Speaker.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zhiyou/video/model/Subject.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zhiyou/video/model/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zhiyou/video/model/Video.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zhiyou/video/service/AdminControllerService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zhiyou/video/service/CourseService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zhiyou/video/service/SpeakerService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zhiyou/video/service/VideoService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zhiyou/video/service/impl/AdminControllerServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zhiyou/video/service/impl/CourseServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zhiyou/video/service/impl/SpeakerServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zhiyou/video/service/impl/VideoServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/fastdfs-client.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/springmvc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/classes/META-INF/zhiyouvideos.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/classes/application.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/classes/com/zhiyou/video/controller/AdminController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/classes/com/zhiyou/video/controller/CourseController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/classes/com/zhiyou/video/controller/SpeakerController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/classes/com/zhiyou/video/controller/VideoController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/classes/com/zhiyou/video/mapper/AdminMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/classes/com/zhiyou/video/mapper/AdminMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/classes/com/zhiyou/video/mapper/CourseMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/classes/com/zhiyou/video/mapper/CourseMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/classes/com/zhiyou/video/mapper/SpeakerMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/classes/com/zhiyou/video/mapper/SpeakerMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/classes/com/zhiyou/video/mapper/VideoMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/classes/com/zhiyou/video/mapper/VideoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/classes/com/zhiyou/video/model/Admin.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/classes/com/zhiyou/video/model/Course.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/classes/com/zhiyou/video/model/Speaker.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/classes/com/zhiyou/video/model/Subject.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/classes/com/zhiyou/video/model/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/classes/com/zhiyou/video/model/Video.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/classes/com/zhiyou/video/service/AdminControllerService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/classes/com/zhiyou/video/service/CourseService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/classes/com/zhiyou/video/service/SpeakerService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/classes/com/zhiyou/video/service/VideoService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/classes/com/zhiyou/video/service/impl/AdminControllerServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/classes/com/zhiyou/video/service/impl/CourseServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/classes/com/zhiyou/video/service/impl/SpeakerServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/classes/com/zhiyou/video/service/impl/VideoServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/classes/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/classes/fastdfs-client.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/classes/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/classes/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/classes/springmvc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/jsp/admin/course/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/jsp/admin/course/saveOrUpdate.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/jsp/admin/header.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/jsp/admin/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/jsp/admin/page.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/jsp/admin/speaker/add.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/jsp/admin/speaker/edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/jsp/admin/speaker/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/jsp/admin/speaker/saveOrUpdate.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/jsp/admin/state/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/jsp/admin/video/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/jsp/admin/video/saveOrUpdate.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/jsp/ajax.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/jsp/ajax_data.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/jsp/front/course/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/jsp/front/include/footer.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/jsp/front/include/header.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/jsp/front/include/script.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/jsp/front/include/style.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/jsp/front/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/jsp/front/message.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/jsp/front/user/avatar.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/jsp/front/user/forget_pwd.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/jsp/front/user/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/jsp/front/user/password.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/jsp/front/user/profile.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/jsp/front/user/reset_pwd.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/jsp/front/user/ufooter.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/jsp/front/user/uheader.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/jsp/front/video/content.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/jsp/front/video/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/lib/activation-1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/lib/aopalliance-1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/lib/aspectjrt-1.7.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/lib/aspectjweaver-1.7.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/lib/c3p0-0.9.5.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/lib/commons-beanutils-1.8.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/lib/commons-codec-1.10.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/lib/commons-collections4-4.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/lib/commons-dbcp-1.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/lib/commons-dbcp2-2.1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/lib/commons-fileupload-1.3.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/lib/commons-io-2.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/lib/commons-logging-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/lib/commons-pool-1.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/lib/commons-pool2-2.4.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/lib/curvesapi-1.04.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/lib/fastdfs-client-java-1.27.0.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/lib/fastjson-1.2.56.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/lib/hamcrest-core-1.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/lib/jackson-annotations-2.2.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/lib/jackson-core-2.2.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/lib/jackson-databind-2.2.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/lib/jcl-over-slf4j-1.7.21.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/lib/jedis-3.0.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/lib/jsqlparser-0.9.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/lib/jstl-api-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/lib/jstl-impl-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/lib/junit-4.12.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/lib/log4j-1.2.17.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/lib/mail-1.4.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/lib/mchange-commons-java-0.2.10.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/lib/mybatis-3.2.8.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/lib/mybatis-generator-core-1.3.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/lib/mybatis-spring-1.3.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/lib/ojdbc-1.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/lib/pagehelper-4.1.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/lib/poi-3.15.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/lib/poi-ooxml-3.15.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/lib/poi-ooxml-schemas-3.15.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/lib/shiro-core-1.2.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/lib/shiro-spring-1.2.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/lib/shiro-web-1.2.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/lib/slf4j-api-1.7.21.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/lib/slf4j-simple-1.7.21.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/lib/spring-aop-4.1.9.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/lib/spring-beans-4.1.9.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/lib/spring-context-4.1.9.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/lib/spring-core-4.1.9.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/lib/spring-expression-4.1.9.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/lib/spring-jdbc-4.1.9.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/lib/spring-tx-4.1.9.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/lib/spring-web-4.1.9.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/lib/spring-webmvc-4.1.9.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/lib/stax-api-1.0.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/lib/xmlbeans-2.6.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/css/base.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/css/bootstrap-theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/css/bootstrap-theme.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/css/bootstrap-theme.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/css/bootstrap-theme.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/css/css.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/css/forget_password.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/css/jquery-confirm.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/css/profile.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/css/video-js.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/img/Thumbs.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/img/android.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/img/arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/img/avatar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/img/avatar_lg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/img/banner-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/img/banner-10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/img/banner-11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/img/banner-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/img/banner-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/img/banner-6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/img/banner.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/img/bigdata.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/img/count.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/img/down.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/img/error.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/img/footer1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/img/footer2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/img/footer3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/img/footer4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/img/footer_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/img/hl_scroll_left1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/img/html5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/img/java.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/img/left-arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/img/nav_down.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/img/nav_down2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/img/password.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/img/phone.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/img/php.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/img/player.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/img/profile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/img/python.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/img/q.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/img/qidai.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/img/right-arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/img/sc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/img/search.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/img/spslt.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/img/spslt1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/img/teacher-wjh.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/img/tele.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/img/thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/img/ui.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/img/up.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/img/user.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/img/we.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/img/yzm.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/img/微信公众号.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/img/微博公众号.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/js/Jcrop_upload.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/js/common.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/js/gVerify.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/js/highcharts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/js/jquery-1.12.4.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/js/jquery-confirm.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/js/jquery.cityselect.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/js/jquery.validate.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/zhiyouvideos-1.0-SNAPSHOT/static/js/video.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhiyou/controller/LoginController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhiyou/model/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhiyou/video/model/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhiyou/model/Course.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhiyou/model/Speaker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhiyou/model/Subject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhiyou/video/model/Subject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhiyou/model/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhiyou/model/Video.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fastdfs-client.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fastdfs-client.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/springmvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/springmvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/course/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/course/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/course/saveOrUpdate.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/course/saveOrUpdate.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/speaker/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/speaker/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/video/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/video/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/video/saveOrUpdate.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/video/saveOrUpdate.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/front/include/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/front/include/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="localRepository" value="D:\Maven - Repository\Maven" />
+        <option name="localRepository" value="D:\MavenRepository\Maven" />
         <option name="mavenHome" value="D:/apache-maven/apache-maven-3.5.0" />
-        <option name="userSettingsFile" value="D:\apache-maven\apache-maven-3.5.0\conf\settings.xml" />
+        <option name="userSettingsFile" value="D:\apache\apache-maven-3.5.0-bin\apache-maven-3.5.0\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="downloadDocsAutomatically" value="true" />
         <option name="downloadSourcesAutomatically" value="true" />
+        <option name="jdkForImporter" value="11 (2)" />
         <option name="vmOptionsForImporter" value="-Xmx768m" />
       </MavenImportingSettings>
     </option>
   </component>
   <component name="ProjectId" id="1rNXmo6brm3WEjWXwNdTI91oRp1" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
+    <property name="last_opened_file_path" value="D:/IDEA-WorkSpaceJava33/zhiyouvideos" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -48,7 +369,7 @@
     <configuration name="Tomcat 8.5.9" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.9" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
-      <option name="UPDATING_POLICY" value="update-resources" />
+      <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="zhiyouvideos:war exploded">
           <settings>
@@ -124,8 +445,19 @@
     <option name="viewStates">
       <list>
         <serviceView>
+          <option name="contentProportion" value="0.1303725" />
           <treeState>
-            <expand />
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+            </expand>
             <select />
           </treeState>
         </serviceView>
@@ -143,40 +475,129 @@
       <option name="presentableId" value="Default" />
       <updated>1618817682512</updated>
       <workItem from="1618817685469" duration="131000" />
+      <workItem from="1618818181293" duration="194000" />
+      <workItem from="1618818435005" duration="27072000" />
+      <workItem from="1618881580831" duration="40790000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="后台第一次上传" />
+    <option name="LAST_COMMIT_MESSAGE" value="后台第一次上传" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="2334" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1618817816764">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="607" y="221" key="#Project_Structure" timestamp="1618933451212">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="607" y="221" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1618933451212" />
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1618923320365">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="2334" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1618817816764" />
-    <state x="2660" y="275" key="FileChooserDialogImpl" timestamp="1618817777427">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1618923320365" />
+    <state x="765" y="228" key="#com.intellij.ide.util.MemberChooser" timestamp="1618928148807">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="228" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1618928148807" />
+    <state x="690" y="301" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1618825526478">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="301" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1618825526478" />
+    <state x="588" y="139" key="CommitChangelistDialog2" timestamp="1618846347898">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="588" y="139" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1618846347898" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1618932655450">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="2660" y="275" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1618817777427" />
-    <state width="1877" height="199" key="GridCell.Tab.0.bottom" timestamp="1618817856405">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1618932655450" />
+    <state width="1079" height="269" key="GridCell.Tab.0.bottom" timestamp="1618932112541">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="199" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1618817856405" />
-    <state width="1877" height="199" key="GridCell.Tab.0.center" timestamp="1618817856404">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1079" height="269" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1618932112541" />
+    <state width="1079" height="269" key="GridCell.Tab.0.center" timestamp="1618932112541">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="199" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1618817856404" />
-    <state width="1877" height="199" key="GridCell.Tab.0.left" timestamp="1618817856404">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1079" height="269" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1618932112541" />
+    <state width="1079" height="269" key="GridCell.Tab.0.left" timestamp="1618932112541">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="199" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1618817856404" />
-    <state width="1877" height="199" key="GridCell.Tab.0.right" timestamp="1618817856405">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1079" height="269" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1618932112541" />
+    <state width="1079" height="269" key="GridCell.Tab.0.right" timestamp="1618932112541">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="199" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1618817856405" />
+    <state width="1079" height="269" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1618932112541" />
+    <state width="1079" height="269" key="GridCell.Tab.1.bottom" timestamp="1618932112541">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1079" height="269" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1618932112541" />
+    <state width="1079" height="269" key="GridCell.Tab.1.center" timestamp="1618932112541">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1079" height="269" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1618932112541" />
+    <state width="1079" height="269" key="GridCell.Tab.1.left" timestamp="1618932112541">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1079" height="269" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1618932112541" />
+    <state width="1079" height="269" key="GridCell.Tab.1.right" timestamp="1618932112541">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1079" height="269" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1618932112541" />
+    <state width="1079" height="269" key="GridCell.Tab.2.bottom" timestamp="1618932112541">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1079" height="269" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1618932112541" />
+    <state width="1079" height="269" key="GridCell.Tab.2.center" timestamp="1618932112541">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1079" height="269" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1618932112541" />
+    <state width="1079" height="269" key="GridCell.Tab.2.left" timestamp="1618932112541">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1079" height="269" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1618932112541" />
+    <state width="1079" height="269" key="GridCell.Tab.2.right" timestamp="1618932112541">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1079" height="269" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1618932112541" />
+    <state x="916" y="177" key="SettingsEditor" timestamp="1618932338631">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="916" y="177" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1618932338631" />
+    <state x="792" y="278" key="Vcs.Push.Dialog.v2" timestamp="1618848048271">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="792" y="278" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1618848048271" />
+    <state x="708" y="387" key="com.intellij.ide.util.TipDialog" timestamp="1618818436676">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="708" y="387" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1618818436676" />
+    <state x="754" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1618835983149">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="754" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1618835983149" />
+    <state x="267" y="147" width="854" height="709" key="dock-window-1" timestamp="1618921640403">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="267" y="147" width="854" height="709" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1618921640403" />
+    <state x="909" y="344" key="git4idea.merge.GitPullDialog" timestamp="1618846370921">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="909" y="344" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1618846370921" />
     <state x="2536" y="240" width="672" height="677" key="run.anything.popup" timestamp="1618817856425">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2536" y="240" width="672" height="677" key="run.anything.popup/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1618817856425" />
+    <state x="787" y="249" width="672" height="678" key="search.everywhere.popup" timestamp="1618907838521">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="787" y="249" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1618907838521" />
   </component>
 </project>
