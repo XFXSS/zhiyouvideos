@@ -26,7 +26,7 @@
     		<li><a href="javascript:void(0);" onclick="queryPage(${i})">${i }</a></li>
     	</c:if> 
     	
-    </c:forEach>
+    </c:forEach>00
         
      <c:if test="${pageInfo.pageNum==pageInfo.pageNums }">
 	    <li class="disabled">

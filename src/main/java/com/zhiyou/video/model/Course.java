@@ -1,11 +1,31 @@
 package com.zhiyou.video.model;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
+import java.util.Date;
+
 public class Course {
 
     private int id;
-    private String course_title;
+    private String course_name;
     private String course_desc;
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    private Date insert_time;
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    private Date update_time;
     private int subject_id;
+
+    @Override
+    public String toString() {
+        return "Course{" +
+                "id=" + id +
+                ", course_name='" + course_name + '\'' +
+                ", course_desc='" + course_desc + '\'' +
+                ", insert_time=" + insert_time +
+                ", update_time=" + update_time +
+                ", subject_id=" + subject_id +
+                '}';
+    }
 
     public int getId() {
         return id;
@@ -15,12 +35,12 @@ public class Course {
         this.id = id;
     }
 
-    public String getCourse_title() {
-        return course_title;
+    public String getCourse_name() {
+        return course_name;
     }
 
-    public void setCourse_title(String course_title) {
-        this.course_title = course_title;
+    public void setCourse_name(String course_name) {
+        this.course_name = course_name;
     }
 
     public String getCourse_desc() {
@@ -29,6 +49,22 @@ public class Course {
 
     public void setCourse_desc(String course_desc) {
         this.course_desc = course_desc;
+    }
+
+    public Date getInsert_time() {
+        return insert_time;
+    }
+
+    public void setInsert_time(Date insert_time) {
+        this.insert_time = insert_time;
+    }
+
+    public Date getUpdate_time() {
+        return update_time;
+    }
+
+    public void setUpdate_time(Date update_time) {
+        this.update_time = update_time;
     }
 
     public int getSubject_id() {

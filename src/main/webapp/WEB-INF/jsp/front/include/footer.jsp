@@ -3,7 +3,7 @@
 <footer>
 	<ul>
 		<li>
-			<img src="static/img/footer_logo.png" alt="" draggable="false">
+			<img src="/static/img/footer_logo.png" alt="" draggable="false">
 		</li>
 		<li class="mt25">
 			<h3>各校区地址</h3>
@@ -24,8 +24,8 @@
 				<li class="erwei">
 					<br>
 					<div>
-						<img class="weixin" src="static/img/微信公众号.png" alt="" draggable="false">
-						<img class="weibo" src="static/img/微博公众号.png" alt="" draggable="false">
+						<img class="weixin" src="/static/img/微信公众号.png" alt="" draggable="false">
+						<img class="weibo" src="/static/img/微博公众号.png" alt="" draggable="false">
 					</div>
 				</li>
 			</ul>
@@ -49,7 +49,7 @@
 				<div id="forget">
 					<a href="forgetpwd.do">忘记密码？</a>
 				</div>
-				<input type="submit" value="登&#x3000;录">
+				<input type="submit" onclick="commitLogin()" value="登&#x3000;录">
 			</form>
 		</div>
 		<div class="mask_content_footer">
