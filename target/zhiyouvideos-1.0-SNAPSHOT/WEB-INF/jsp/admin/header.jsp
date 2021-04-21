@@ -17,6 +17,7 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
+<<<<<<< HEAD
             <li <c:if test='${param.fromJsp=="video"}'>class="active"</c:if>><a href="<c:url value="/video/list.do"/>">视频管理</a></li>
             <li <c:if test='${param.fromJsp=="speaker"}'>class="active"</c:if>><a href="<c:url value="/speaker/list.do"/>">主讲人管理</a></li>
             <li <c:if test='${param.fromJsp=="course"}'>class="active"</c:if>><a href="<c:url value="/course/list.do"/>">课程管理</a></li>
@@ -25,6 +26,16 @@
           
           <ul class="nav navbar-nav navbar-right">
         <li><a href="/admin/logout.do" title="点击退出登录">${sessionScope.session_user.loginName }<i class="glyphicon glyphicon-log-out" aria-hidden="true"></i></a></li>
+=======
+            <li <c:if test='${param.fromJsp=="video"}'>class="active"</c:if>><a href="admin/video/index.do">视频管理</a></li>
+            <li <c:if test='${param.fromJsp=="speaker"}'>class="active"</c:if>><a href="admin/speaker/index.do">主讲人管理</a></li>
+            <li <c:if test='${param.fromJsp=="course"}'>class="active"</c:if>><a href="admin/course/index.do">课程管理</a></li>
+            <li <c:if test='${param.fromJsp=="state"}'>class="active"</c:if>><a href="admin/state/courseavg.do">统计分析</a></li>
+          </ul>
+          
+          <ul class="nav navbar-nav navbar-right">
+        <li><a href="admin/logout.do" title="点击退出登录">${sessionScope.session_user.loginName }<i class="glyphicon glyphicon-log-out" aria-hidden="true"></i></a></li>
+>>>>>>> b2d078bd85813ed6429705882eca18a45c0751ab
       </ul>
         </div><!--/.nav-collapse -->
       </div>

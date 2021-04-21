@@ -8,7 +8,11 @@
 <base href="${BaseContext }">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>主讲人列表 - 课程管理</title>
+<<<<<<< HEAD
 <link href="<c:url value="/static/css/bootstrap.min.css"/>" rel="stylesheet">
+=======
+<link href="static/css/bootstrap.min.css" rel="stylesheet">
+>>>>>>> b2d078bd85813ed6429705882eca18a45c0751ab
 </head>
 <body>
 	<!-- 引入公用的导航信息 -->
@@ -48,6 +52,7 @@
  				</tr>
  			</thead>
  			<tbody>
+<<<<<<< HEAD
  				<c:if test="${not empty list}">
  					<c:forEach items="${list}" var="sp" varStatus="i">
 		 				<tr>
@@ -55,12 +60,25 @@
 		 					<td>${sp.speaker_name}</td>
 		 					<td>${sp.speaker_job}</td>
 		 					<td>${sp.speaker_descr}</td>
+=======
+ 				<c:if test="${not empty pageInfo }">
+ 					<c:forEach items="${pageInfo.results }" var="sp" varStatus="i">
+		 				<tr>
+		 					<td>${i.index+1 }</td>
+		 					<td>${sp.speakerName }</td>
+		 					<td>${sp.speakerJob }</td>
+		 					<td>${sp.speakerDescr}</td>
+>>>>>>> b2d078bd85813ed6429705882eca18a45c0751ab
 		 					<td><a href="admin/speaker/edit.do?id=${sp.id }"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a></td>
 		 					<td><a href="admin/speaker/delete.do?id=${sp.id }"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></a></td>
 		 				</tr>
 	 				</c:forEach>
  				</c:if>
+<<<<<<< HEAD
  				<c:if test="${empty list }">
+=======
+ 				<c:if test="${empty pageInfo }">
+>>>>>>> b2d078bd85813ed6429705882eca18a45c0751ab
  					<tr><td>当前查询结果为空!</td></tr>
  				</c:if>
  			</tbody>
@@ -75,7 +93,11 @@
 		<input type="hidden" name="pageNum" value="${pageNum }" id="queryPage">
 	</form>
 
+<<<<<<< HEAD
 <script src="<c:url value="/static/js/jquery-1.12.4.min.js"/> "></script>
+=======
+<script src="static/js/jquery-1.12.4.min.js"></script>
+>>>>>>> b2d078bd85813ed6429705882eca18a45c0751ab
 <script type="text/javascript">
 	//翻页提交
 	function queryPage(page){

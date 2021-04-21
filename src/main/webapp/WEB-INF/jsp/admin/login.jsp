@@ -27,11 +27,13 @@
   <div class="form-group has-success">
     <div class="col-sm-10">
       <input type="text" class="form-control  input-lg" name="loginName" id="loginName" placeholder="用户名">
+      <div id="nalogin"></div>
     </div>
   </div>
   <div class="form-group has-success">
     <div class="col-sm-10">
       <input type="password" class="form-control input-lg" name="loginPwd" id="loginPwd" placeholder="登录密码">
+      <div id="palogin"></div>
     </div>
   </div>
 
@@ -82,8 +84,6 @@
 			}
 		});	
 	});
-	
 </script>
-
 </body>
 </html>

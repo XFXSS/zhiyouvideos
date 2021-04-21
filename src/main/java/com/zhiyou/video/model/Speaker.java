@@ -11,13 +11,24 @@ public class Speaker {
     private String speaker_name;
     private String speaker_job;
     private String speaker_head_url;
-    private String speaker_descr;
+    private String speaker_desc;
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date insert_time;
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date update_time;
 
-
+    @Override
+    public String toString() {
+        return "Speaker{" +
+                "id=" + id +
+                ", speaker_name='" + speaker_name + '\'' +
+                ", speaker_job='" + speaker_job + '\'' +
+                ", speaker_head_url='" + speaker_head_url + '\'' +
+                ", speaker_desc='" + speaker_desc + '\'' +
+                ", insert_time=" + insert_time +
+                ", update_time=" + update_time +
+                '}';
+    }
 
     public int getId() {
         return id;
@@ -51,12 +62,12 @@ public class Speaker {
         this.speaker_head_url = speaker_head_url;
     }
 
-    public String getSpeaker_descr() {
-        return speaker_descr;
+    public String getSpeaker_desc() {
+        return speaker_desc;
     }
 
-    public void setSpeaker_descr(String speaker_descr) {
-        this.speaker_descr = speaker_descr;
+    public void setSpeaker_desc(String speaker_desc) {
+        this.speaker_desc = speaker_desc;
     }
 
     public Date getInsert_time() {
@@ -72,32 +83,6 @@ public class Speaker {
     }
 
     public void setUpdate_time(Date update_time) {
-        this.update_time = update_time;
-    }
-
-    @Override
-    public String toString() {
-        return "Speaker{" +
-                "id=" + id +
-                ", speaker_name='" + speaker_name + '\'' +
-                ", speaker_job='" + speaker_job + '\'' +
-                ", speaker_head_url='" + speaker_head_url + '\'' +
-                ", speaker_descr='" + speaker_descr + '\'' +
-                ", insert_time=" + insert_time +
-                ", update_time=" + update_time +
-                '}';
-    }
-
-    public Speaker() {
-    }
-
-    public Speaker(int id, String speaker_name, String speaker_job, String speaker_head_url, String speaker_descr, Date insert_time, Date update_time) {
-        this.id = id;
-        this.speaker_name = speaker_name;
-        this.speaker_job = speaker_job;
-        this.speaker_head_url = speaker_head_url;
-        this.speaker_descr = speaker_descr;
-        this.insert_time = insert_time;
         this.update_time = update_time;
     }
 }

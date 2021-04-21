@@ -29,30 +29,30 @@
                 <table cellspacing="10">
                     <tr>
                         <td colspan="2">
-                            <a href="front/course/index.do?subjectId=1">
-                                <img src="static/img/html5.jpg" alt="" class="image scale" draggable="false">
+                            <a href="/front/course/index.do?subjectId=1">
+                                <img src="/static/img/html5.jpg" alt="" class="image scale" draggable="false">
                                 <div class="headline">
                                     <span>Web前端教程</span>
-                                    <img src="static/img/arrow.png" alt="">
+                                    <img src="/static/img/arrow.png" alt="">
                                 </div>
                             </a>
                         </td>
                         <td>
                             <!--上线时修改id-->
                             <a href="front/course/index.do?subjectId=6">
-                                <img src="static/img/ui.jpg" alt="" class="image scale" draggable="false">
+                                <img src="/static/img/ui.jpg" alt="" class="image scale" draggable="false">
                                 <div class="headline">
                                     <span>UI设计教程</span>
-                                    <img src="static/img/arrow.png" alt="">
+                                    <img src="/static/img/arrow.png" alt="">
                                 </div>
                             </a>
                         </td>
                         <td rowspan="2" class="one_three">
                             <a href="#" class="opacity5">
-                                <img src="static/img/java.jpg" alt="" class="image" draggable="false">
+                                <img src="/static/img/java.jpg" alt="" class="image" draggable="false">
                                 <div class="headline">
                                     <span>Java教程</span>
-                                    <img src="static/img/arrow.png" alt="">
+                                    <img src="/static/img/arrow.png" alt="">
                                 </div>
                             </a>
                         </td>
@@ -60,35 +60,35 @@
                     <tr>
                         <td>
                             <a href="#" class="opacity5">
-                                <img src="static/img/bigdata.jpg" alt="" class="image" draggable="false">
+                                <img src="/static/img/bigdata.jpg" alt="" class="image" draggable="false">
                                 <div class="headline">
                                     <span>大数据教程</span>
-                                    <img src="static/img/arrow.png" alt="">
+                                    <img src="/static/img/arrow.png" alt="">
                                 </div>
                             </a>
                         </td>
                         <td colspan="2">
-                            <a href="front/course/index.do?subjectId=10">
-                                <img src="static/img/python.jpg" alt="" class="image scale" draggable="false">
+                            <a href="/front/course/index.do?subjectId=10">
+                                <img src="/static/img/python.jpg" alt="" class="image scale" draggable="false">
                                 <div class="headline">
                                     <span>Python教程</span>
-                                    <img src="static/img/arrow.png" alt="">
+                                    <img src="/static/img/arrow.png" alt="">
                                 </div>
                             </a>
                         </td>
                     </tr>
                     <tr>
                         <td colspan="2">
-                            <a href="front/course/index.do?subjectId=11">
-                                <img src="static/img/php.jpg" alt="" class="image scale" draggable="false">
+                            <a href="/front/course/index.do?subjectId=11">
+                                <img src="/static/img/php.jpg" alt="" class="image scale" draggable="false">
                                 <div class="headline">
                                     <span>PHP教程</span>
-                                    <img src="static/img/arrow.png" alt="">
+                                    <img src="/static/img/arrow.png" alt="">
                                 </div>
                             </a>
                         </td>
                         <td colspan="2" class="three_two">
-                            <img src="static/img/qidai.jpg" alt="" class="image" draggable="false">
+                            <img src="/static/img/qidai.jpg" alt="" class="image" draggable="false">
                             <div class="headline">
                                 更多课程，敬请期待...
                             </div>

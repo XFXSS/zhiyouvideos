@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zhiyou.video.mapper.UserMapper" >
+    <resultMap id="UserMap" type="com.zhiyou.video.model.User">
+        <result column="ID" property="ID"/>
+        <result column="NICK_NAME" property="NICK_NAME"/>
+        <result column="SEX" property="SEX"/>
+        <result column="BIRTHDAY" property="BIRTHDAY"/>
+        <result column="EMAIL" property="EMAIL"/>
+        <result column="province" property="province"/>
+        <result column="city" property="city"/>
+        <result column="HEAD_URL" property="HEAD_URL"/>
+        <result column="PASSWORD" property="PASSWORD"/>
+        <result column="INSERT_TIME" property="INSERT_TIME"/>
+        <result column="UPDATE_TIME" property="UPDATE_TIME"/>
+        <result column="CAPTCHA" property="CAPTCHA"/>
+    </resultMap>
+    <sql id="UserSql">
+        "ID","NICK_NAME","SEX","BIRTHDAY","EMAIL","PROVINCE","CITY","HEAD_URL","PASSWORD","INSERT_TIME","UPDATE_TIME","CAPTCHA"
+    </sql>
+    <select id="findUserByLogin" parameterType="String" resultType="User">
+        select <include refid="UserSql"/> from USERS where EMAIL=#{email} and PASSWORD=#{password}
+    </select>
+    <insert id="findUserByRegist" parameterType="String">
+        insert into USERS (ID,EMAIL,PASSWORD) values (4,#{email},#{password})
+    </insert>
+    <select id="findUserByprofile" parameterType="String" resultType="User">
+        select <include refid="UserSql"/> from USERS where NICK_NAME=#{nick_name}
+    </select>
+    <update id="findUserByprofiletwo" parameterType="User">
+        update USERS set NICK_NAME=#{nick_name},SEX=#{sex},BIRTHDAY=#{birthday},PROVINCE=#{province},CITY=#{city} where ID=#{id}
+    </update>
+    <select id="findUserByavatar" parameterType="String" resultType="User">
+        select <include refid="UserSql"/> from USERS where NICK_NAME=#{nick_name}
+    </select>
+    <update id="findUserByavatartwo" parameterType="String">
+        update USERS set HEAD_URL=#{head_url} where NICK_NAME=#{nick_name}
+    </update>
+    <select id="findUserBypassword" parameterType="String" resultType="User">
+        select <include refid="UserSql"/> from USERS where NICK_NAME=#{nick_name}
+    </select>
+    <update id="findUserBypasswords" parameterType="String">
+        update USERS set PASSWORD=#{newPasswords} where PASSWORD=#{password}
+    </update>
+</mapper>

@@ -9,7 +9,11 @@
 
 <header>
 	<div class="container top_bar clearfix">
+<<<<<<< HEAD
 		<img src="static/img/logo.png" alt="智游">
+=======
+		<img src="/static/img/logo.png" alt="智游">
+>>>>>>> b2d078bd85813ed6429705882eca18a45c0751ab
 		<div id="tele">
 			<span>4006-371-555</span>
 			<span>0371-88888598</span>
@@ -18,6 +22,7 @@
 	<menu>
 		<div class="container clearfix">
 			<ul class="clearfix f_left">
+<<<<<<< HEAD
 				<li><a href="index.do">首页</a></li>
 				<li class="menu_active"><a href="front/user/index.do">个人中心</a></li>
 			</ul>
@@ -33,6 +38,23 @@
 
 				</a>
 				<a href="front/user/logout.do" id="lay_out">退出</a>
+=======
+				<li><a href="/index.do">首页</a></li>
+				<li class="menu_active"><a href="/front/user/profile.do?nick_name=${user.nick_name}">个人中心</a></li>
+			</ul>
+			<div id="user_bar">
+				<a href="/front/user/avatar.do?nick_name=${user.nick_name}">
+					<c:if test="${empty user.head_url}">
+						<img id="avatar" src="/static/img/avatar_lg.png" alt="">
+					</c:if>
+
+					<c:if test="${not empty user.head_url}">
+						<img id="avatar" src="${user.head_url}" alt="">
+					</c:if>
+
+				</a>
+				<a href="/front/user/logout.do" id="lay_out">退出</a>
+>>>>>>> b2d078bd85813ed6429705882eca18a45c0751ab
 			</div>
 		</div>
 	</menu>

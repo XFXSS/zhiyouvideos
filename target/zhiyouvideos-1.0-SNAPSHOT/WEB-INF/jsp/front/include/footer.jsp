@@ -3,7 +3,11 @@
 <footer>
 	<ul>
 		<li>
+<<<<<<< HEAD
 			<img src="static/img/footer_logo.png" alt="" draggable="false">
+=======
+			<img src="/static/img/footer_logo.png" alt="" draggable="false">
+>>>>>>> b2d078bd85813ed6429705882eca18a45c0751ab
 		</li>
 		<li class="mt25">
 			<h3>各校区地址</h3>
@@ -24,8 +28,13 @@
 				<li class="erwei">
 					<br>
 					<div>
+<<<<<<< HEAD
 						<img class="weixin" src="static/img/微信公众号.png" alt="" draggable="false">
 						<img class="weibo" src="static/img/微博公众号.png" alt="" draggable="false">
+=======
+						<img class="weixin" src="/static/img/微信公众号.png" alt="" draggable="false">
+						<img class="weibo" src="/static/img/微博公众号.png" alt="" draggable="false">
+>>>>>>> b2d078bd85813ed6429705882eca18a45c0751ab
 					</div>
 				</li>
 			</ul>
@@ -42,14 +51,22 @@
 			<img src="static/img/logo.png" alt="" class="ma">
 		</div>
 		<div class="mask_content_body">
+<<<<<<< HEAD
 			<form id="loginForm" action="front/user/login.do" method="post">
+=======
+			<form id="loginForm" action="/front/user/login.do" method="post">
+>>>>>>> b2d078bd85813ed6429705882eca18a45c0751ab
 				<h3>快速登录</h3>
 				<input type="email" id="loginEmail" placeholder="请输入邮箱" name="email">
 				<input type="password" id="loginPassword" placeholder="请输入密码" name="password">
 				<div id="forget">
 					<a href="forgetpwd.do">忘记密码？</a>
 				</div>
+<<<<<<< HEAD
 				<input type="submit" value="登&#x3000;录">
+=======
+				<input type="submit" onclick="commitLogin()" value="登&#x3000;录">
+>>>>>>> b2d078bd85813ed6429705882eca18a45c0751ab
 			</form>
 		</div>
 		<div class="mask_content_footer">
@@ -80,3 +97,28 @@
 		</div>
 	</div>
 </div>
+<<<<<<< HEAD
+=======
+<%--<script type="text/javascript">--%>
+<%--	var na = /(\([\u4e00-\u9fa5])*([\u4e00-\u9fa5])\2{2}([\u4e00-\u9fa5])*/g;--%>
+<%--	$("#loginEmail").blur(function () {--%>
+<%--		var name =  $("#loginEmail").val();--%>
+<%--		if (na.test(name)) {--%>
+<%--			$("#nalogin").val("账号格式正确");--%>
+<%--		} else {--%>
+<%--			$("#nalogin").val("账号格式不正确");--%>
+<%--			$("#loginEmail").val(null);--%>
+<%--		}--%>
+<%--	})--%>
+<%--	var pa = /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+((\.[a-zA-Z0-9_-]{2,3}){1,2})$/;--%>
+<%--	$("#loginPassword").blur(function () {--%>
+<%--		var password =  $("#loginPassword").val();--%>
+<%--		if (pa.test(password)) {--%>
+<%--			$("#palogin").val("密码格式正确");--%>
+<%--		} else {--%>
+<%--			$("#palogin").val("密码格式不正确");--%>
+<%--			$("#loginPassword").val(null);--%>
+<%--		}--%>
+<%--	})--%>
+<%--</script>--%>
+>>>>>>> b2d078bd85813ed6429705882eca18a45c0751ab

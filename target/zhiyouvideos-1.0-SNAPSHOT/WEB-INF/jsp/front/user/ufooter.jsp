@@ -9,9 +9,15 @@
 <footer>
 	<div class="container">
 		<ul>
+<<<<<<< HEAD
 			<li><img src="static/img/footer_logo.png" alt="" id="foot_logo"></li>
 			<li>版权所有：智游3G教育&#x3000;&#x3000;&#x3000;&copy;&nbsp;www.zhiyou100.com</li>
 			<li><img src="static/img/微信公众号.png" alt="" id="wxgzh"></li>
+=======
+			<li><img src="/static/img/footer_logo.png" alt="" id="foot_logo"></li>
+			<li>版权所有：智游3G教育&#x3000;&#x3000;&#x3000;&copy;&nbsp;www.zhiyou100.com</li>
+			<li><img src="/static/img/微信公众号.png" alt="" id="wxgzh"></li>
+>>>>>>> b2d078bd85813ed6429705882eca18a45c0751ab
 		</ul>
 	</div>
 </footer>
