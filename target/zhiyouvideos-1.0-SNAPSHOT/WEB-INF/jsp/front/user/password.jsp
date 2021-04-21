@@ -10,13 +10,8 @@
     <meta name="renderer" content="webkit">
     <meta name="keywords" content="Web前端视频教程,大数据视频教程,HTML5视频教程,UI视频教程,PHP视频教程,java视频教程,python基础教程">
     <meta name="description" content="智游教育在线课程视频,为您提供java,python,HTML5,UI,PHP,大数据等学科经典视频教程在线浏览学习,精细化知识点解析,深入浅出,想学不会都难,智游教育,学习成就梦想！">
-<<<<<<< HEAD
-    <link rel="stylesheet" href="static/css/base.css">
-    <link rel="stylesheet" href="static/css/profile.css">
-=======
     <link rel="stylesheet" href="/static/css/base.css">
     <link rel="stylesheet" href="/static/css/profile.css">
->>>>>>> b2d078bd85813ed6429705882eca18a45c0751ab
     <title>在线公开课-智游教育|java|大数据|HTML5|python|UI|PHP视频教程</title>
 
 </head>
@@ -28,39 +23,22 @@
             <h2>我的资料</h2>
             <div id="profile_tab">
                 <ul class="profile_tab_header f_left clearfix">
-<<<<<<< HEAD
-                    <li><a href="front/user/profile.do">更改资料</a></li>
-                    <li class="profile_tab_line">|</li>
-                    <li><a href="front/user/avatar.do">更改头像</a></li>
-                    <li class="profile_tab_line">|</li>
-                    <li><a href="front/user/password.do">密码安全</a></li>
-=======
                     <li><a href="/front/user/profile.do?nick_name=${user.nick_name}">更改资料</a></li>
                     <li class="profile_tab_line">|</li>
                     <li><a href="/front/user/avatar.do?nick_name=${user.nick_name}">更改头像</a></li>
                     <li class="profile_tab_line">|</li>
                     <li><a href="/front/user/password.do?nick_name=${user.nick_name}">密码安全</a></li>
->>>>>>> b2d078bd85813ed6429705882eca18a45c0751ab
                 </ul>
                 <div class="proflle_tab_body">
                     <div class="proflle_tab_workplace clearfix">
                         <div class="profile_avatar_area">
                         
-<<<<<<< HEAD
-                           <c:if test="${empty user.headUrl}">
-		                         <img id="avatar"  src="static/img/avatar_lg.png" alt="">
-		                      </c:if>
-		                      
-		                      <c:if test="${not empty user.headUrl}">
-		                         <img id="avatar" width="200px" height="200px" src="${user.headUrl}" alt="">
-=======
                            <c:if test="${empty user.head_url}">
 		                         <img id="avatar"  src="/static/img/avatar_lg.png" alt="">
 		                      </c:if>
 		                      
 		                      <c:if test="${not empty user.head_url}">
 		                         <img id="avatar" width="200px" height="200px" src="${user.head_url}" alt="">
->>>>>>> b2d078bd85813ed6429705882eca18a45c0751ab
 		                      </c:if>
                            
                         </div>
@@ -72,17 +50,10 @@
 				                <strong>${message}</strong>
 				            </div>
 				            </c:if>
-<<<<<<< HEAD
-                            <form action="front/user/password.do" method="post">
-                                <div class="form_group">
-                                    <span class="dd">旧&#x3000;密&#x3000;码：</span>
-                                    <input type="password" id="oldPassword" name="oldPassword">
-=======
                             <form action="/front/user/passwords.do" method="post">
                                 <div class="form_group">
                                     <span class="dd">旧&#x3000;密&#x3000;码：</span>
                                     <input type="password" id="oldPassword" name="password">
->>>>>>> b2d078bd85813ed6429705882eca18a45c0751ab
                                 </div>
                                 <div class="form_group">
                                     <span class="dd">新&#x3000;密&#x3000;码：</span>
@@ -90,11 +61,7 @@
                                 </div>
                                 <div class="form_group">
                                     <span class="dd">确认新密码：</span>
-<<<<<<< HEAD
-                                    <input type="password" id="newPassword02" name="newPasswordAgain">
-=======
                                     <input type="password" id="newPassword02" name="newPasswords">
->>>>>>> b2d078bd85813ed6429705882eca18a45c0751ab
                                 </div>
                                 <div class="form_submit dd">
                                     <input type="submit" value="保&#x3000;存">

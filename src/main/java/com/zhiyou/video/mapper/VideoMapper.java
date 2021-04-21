@@ -19,4 +19,11 @@ public interface VideoMapper {
      */
     Video findVideoById(Integer id);
     void updateOne(Video video);
+
+    /**
+     * 添加视频
+     */
+    void addOne(Video video);
+
+    int deleteById(Integer id);
 }

@@ -6,4 +6,6 @@ import java.util.List;
 
 public interface SpeakerMapper {
     List<Speaker> findAll();
+
+    Speaker findById(Integer id);
 }

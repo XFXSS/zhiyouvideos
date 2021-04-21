@@ -1,4 +1,4 @@
-package com.zhiyou.video.service.impl;
+package com.zhiyou.video.service.Impl;
 
 import com.zhiyou.video.mapper.VideoMapper;
 import com.zhiyou.video.model.Speaker;
@@ -25,8 +25,6 @@ public class VideoServiceImpl implements VideoService {
 
     /**
      * 编辑视频
-     * @param id
-     * @return
      */
     @Override
     public Video findVideoById(Integer id) {
@@ -38,6 +36,22 @@ public class VideoServiceImpl implements VideoService {
     @Override
     public void updateOne(Video video) {
         videoMapper.updateOne(video);
+    }
+
+    /**
+     * 添加视频数据
+     */
+    @Override
+    public void addOne(Video video) {
+        videoMapper.addOne(video);
+    }
+
+    /**
+     * 删除
+     */
+    @Override
+    public int deleteById(Integer id) {
+        return videoMapper.deleteById(id);
     }
 
 }

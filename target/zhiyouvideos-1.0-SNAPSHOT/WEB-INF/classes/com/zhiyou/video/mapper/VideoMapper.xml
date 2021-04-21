@@ -56,6 +56,81 @@
             ID = #{id}
     </update>
 
+    <insert id="addOne" parameterType="Video">
+        INSERT INTO VIDEO
+        <trim prefix="(" suffix=")" suffixOverrides="," >
+            ID,
+            <if test="video_title != null">
+                VIDEO_TITLE,
+            </if>
+            <if test="speaker_id != null">
+                SPEAKER_ID,
+            </if>
+            <if test="course_id != null">
+                COURSE_ID,
+            </if>
+            <if test="video_length != null">
+                VIDEO_LENGTH,
+            </if>
+            <if test="video_image_url != null">
+                VIDEO_IMAGE_URL,
+            </if>
+            <if test="video_url != null">
+                VIDEO_URL,
+            </if>
+            <if test="video_descr != null">
+                VIDEO_DESCR,
+            </if>
+            <if test="insert_time != null">
+                INSERT_TIME,
+            </if>
+            <if test="update_time != null">
+                UPDATE_TIME,
+            </if>
+            <if test="video_play_times != null">
+                VIDEO_PLAY_TIMES
+            </if>
+        </trim>
+        VALUES
+        <trim prefix="(" suffix=")" suffixOverrides="," >
+            myseq.nextval,
+            <if test="video_title != null">
+                #{video_title},
+            </if>
+            <if test="speaker_id != null">
+                #{speaker_id},
+            </if>
+            <if test="course_id != null">
+                #{course_id},
+            </if>
+            <if test="video_length != null">
+                #{video_length},
+            </if>
+            <if test="video_image_url != null">
+                #{video_image_url},
+            </if>
+            <if test="video_url != null">
+                #{video_url},
+            </if>
+            <if test="video_descr != null">
+                #{video_descr},
+            </if>
+            <if test="insert_time != null">
+                #{insert_time},
+            </if>
+            <if test="update_time != null">
+                #{update_time},
+            </if>
+            <if test="video_play_times != null">
+                #{video_play_times}
+            </if>
+        </trim>
+    </insert>
+
+    <delete id="deleteById" parameterType="Integer">
+        delete from VIDEO where ID = #{id}
+    </delete>
+
 
 
 </mapper>

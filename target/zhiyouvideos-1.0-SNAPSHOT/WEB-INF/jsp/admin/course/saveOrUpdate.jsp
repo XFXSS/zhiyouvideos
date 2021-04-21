@@ -20,11 +20,7 @@
 		<div class="jumbotron">
   			<h2>添加课程 - 课程管理</h2>
 		</div>
-<<<<<<< HEAD
 
-=======
-		
->>>>>>> b2d078bd85813ed6429705882eca18a45c0751ab
 		<form class="form-horizontal" action="admin/course/saveOrUpdate.do" method="post">
 		<c:if test="${not empty course }">
 			<input type="hidden" name="id" value="${course.id }" }>

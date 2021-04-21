@@ -137,11 +137,7 @@
     <!-- ================================ Redis单机 通过连接池 ================================= -->
     <bean id="jedisPool" class="redis.clients.jedis.JedisPool" destroy-method="close">
         <constructor-arg name="poolConfig" ref="jedisPoolConfig"></constructor-arg>
-<<<<<<< HEAD
         <constructor-arg name="host" value="192.168.37.30"></constructor-arg>
-=======
-        <constructor-arg name="host" value="192.168.150.160"></constructor-arg>
->>>>>>> b2d078bd85813ed6429705882eca18a45c0751ab
         <constructor-arg name="port" value="6379"></constructor-arg>
     </bean>
 </beans>

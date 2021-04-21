@@ -176,13 +176,14 @@
 					btnClass:'btn-primary',
 					action:function(){
 						//根据id发送删除请求ajax
-						$.get('admin/video/delete.do',{id:id},function(data){
+						$.get('/video/delete.do',{id:id},function(data){
 							if(data.success){
 								//成功，刷新页面
 								$.alert({
 									content:'删除数据成功',
 									onAction:function(){
 										location.reload();
+										// window.location = "/admin/video/findAll.do";
 									}
 								});
 								

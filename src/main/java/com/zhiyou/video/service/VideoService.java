@@ -12,4 +12,8 @@ public interface VideoService {
     Video findVideoById(Integer id);
 
     void updateOne(Video video);
+
+    void addOne(Video video);
+
+    int deleteById(Integer id);
 }

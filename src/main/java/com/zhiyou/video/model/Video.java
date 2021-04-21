@@ -20,14 +20,30 @@ public class Video {
     private Date update_time;
     private int video_play_times;
 
-<<<<<<< HEAD
     // 讲师姓名
     private String speaker_name;
     // 课程名字
     private String course_name;
 
-=======
->>>>>>> b2d078bd85813ed6429705882eca18a45c0751ab
+    public Video(int id, String video_title, int speaker_id, int course_id, int video_length, String video_image_url, String video_url, String video_descr, Date insert_time, Date update_time, int video_play_times, String speaker_name, String course_name) {
+        this.id = id;
+        this.video_title = video_title;
+        this.speaker_id = speaker_id;
+        this.course_id = course_id;
+        this.video_length = video_length;
+        this.video_image_url = video_image_url;
+        this.video_url = video_url;
+        this.video_descr = video_descr;
+        this.insert_time = insert_time;
+        this.update_time = update_time;
+        this.video_play_times = video_play_times;
+        this.speaker_name = speaker_name;
+        this.course_name = course_name;
+    }
+
+    public Video() {
+    }
+
     @Override
     public String toString() {
         return "Video{" +
@@ -42,9 +58,8 @@ public class Video {
                 ", insert_time=" + insert_time +
                 ", update_time=" + update_time +
                 ", video_play_times=" + video_play_times +
-<<<<<<< HEAD
-                ", speaker_name=" + speaker_name +
-                ", course_name=" + course_name +
+                ", speaker_name='" + speaker_name + '\'' +
+                ", course_name='" + course_name + '\'' +
                 '}';
     }
 
@@ -64,11 +79,6 @@ public class Video {
         this.speaker_name = speaker_name;
     }
 
-=======
-                '}';
-    }
-
->>>>>>> b2d078bd85813ed6429705882eca18a45c0751ab
     public int getId() {
         return id;
     }
@@ -106,7 +116,7 @@ public class Video {
     }
 
     public void setVideo_length(int video_length) {
-        this.video_length = video_length;
+        this.video_length = video_length >= 0 ? video_length : 0;
     }
 
     public String getVideo_image_url() {

@@ -9,10 +9,7 @@ public class User {
     private int id;
     private String nick_name;
     private int sex;
-<<<<<<< HEAD
-=======
     @DateTimeFormat(pattern = "yyyy-MM-dd")
->>>>>>> b2d078bd85813ed6429705882eca18a45c0751ab
     private Date birthday;
     private String email;
     private String province;
@@ -43,17 +40,6 @@ public class User {
                 '}';
     }
 
-<<<<<<< HEAD
-    public Date getBirthday() {
-        return birthday;
-    }
-
-    public void setBirthday(Date birthday) {
-        this.birthday = birthday;
-    }
-
-=======
->>>>>>> b2d078bd85813ed6429705882eca18a45c0751ab
     public int getId() {
         return id;
     }
@@ -74,8 +60,6 @@ public class User {
         return sex;
     }
 
-<<<<<<< HEAD
-=======
     public Date getBirthday() {
         return birthday;
     }
@@ -84,15 +68,11 @@ public class User {
         this.birthday = birthday;
     }
 
->>>>>>> b2d078bd85813ed6429705882eca18a45c0751ab
     public void setSex(int sex) {
         this.sex = sex;
     }
 
-<<<<<<< HEAD
-=======
 
->>>>>>> b2d078bd85813ed6429705882eca18a45c0751ab
     public String getEmail() {
         return email;
     }

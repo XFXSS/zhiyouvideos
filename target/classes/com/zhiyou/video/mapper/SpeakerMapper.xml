@@ -21,4 +21,19 @@
         from SPEAKER
         ORDER BY ID
     </select>
+
+    <select id="findById" resultType="Speaker">
+        select
+        <include refid="Base_Column_List"/>
+        from SPEAKER
+        where ID = #{id}
+    </select>
+
+    <update id="" parameterType="java.lang.Integer">
+        UPDATE SPEAKER
+    SET
+        SPEAKER_NAME=#{speaker_name}, SPEAKER_JOB=#{speaker_job}, SPEAKER_HEAD_URL=#{speaker_head_url}, SPEAKER_DESCR=#{speaker_descr}
+    WHERE
+	    ID = #{id}
+    </update>
 </mapper>

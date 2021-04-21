@@ -8,28 +8,20 @@ public class Course {
 
     private int id;
     private String course_name;
-<<<<<<< HEAD
     private String course_descr;
-=======
-    private String course_desc;
->>>>>>> b2d078bd85813ed6429705882eca18a45c0751ab
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date insert_time;
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date update_time;
     private int subject_id;
 
-<<<<<<< HEAD
     private String subject_name;
 
-=======
->>>>>>> b2d078bd85813ed6429705882eca18a45c0751ab
     @Override
     public String toString() {
         return "Course{" +
                 "id=" + id +
                 ", course_name='" + course_name + '\'' +
-<<<<<<< HEAD
                 ", course_descr='" + course_descr + '\'' +
                 ", insert_time=" + insert_time +
                 ", update_time=" + update_time +
@@ -46,15 +38,6 @@ public class Course {
         this.subject_name = subject_name;
     }
 
-=======
-                ", course_desc='" + course_desc + '\'' +
-                ", insert_time=" + insert_time +
-                ", update_time=" + update_time +
-                ", subject_id=" + subject_id +
-                '}';
-    }
-
->>>>>>> b2d078bd85813ed6429705882eca18a45c0751ab
     public int getId() {
         return id;
     }
@@ -71,21 +54,12 @@ public class Course {
         this.course_name = course_name;
     }
 
-<<<<<<< HEAD
     public String getCourse_descr() {
         return course_descr;
     }
 
     public void setCourse_descr(String course_desc) {
         this.course_descr = course_desc;
-=======
-    public String getCourse_desc() {
-        return course_desc;
-    }
-
-    public void setCourse_desc(String course_desc) {
-        this.course_desc = course_desc;
->>>>>>> b2d078bd85813ed6429705882eca18a45c0751ab
     }
 
     public Date getInsert_time() {

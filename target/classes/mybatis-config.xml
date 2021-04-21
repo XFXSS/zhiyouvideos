@@ -16,11 +16,7 @@
     <!--   每个单独的类取别名     -->
     <!-- <typeAlias type="" alias=""></typeAlias>-->
     <!--  给包下所有类取别名,别名就是类名  -->
-<<<<<<< HEAD
         <package name="com.zhiyou.video"/>
-=======
-        <package name="com.zhiyou"/>
->>>>>>> b2d078bd85813ed6429705882eca18a45c0751ab
     </typeAliases>
 
 </configuration>

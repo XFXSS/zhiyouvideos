@@ -21,7 +21,7 @@
 		<div class="jumbotron">
   			<h2>主讲人列表 - 主讲人管理</h2>
 		</div>
-		<div class="row"><a href="admin/speaker/add.do" class="btn btn-primary">添加主讲人</a>
+		<div class="row"><a href="/speaker/add.do" class="btn btn-primary">添加主讲人</a>
 		<div style="float: right;">
 			<form class="form-inline" action="admin/speaker/index.do" method="post">
 			  <div class="form-group">
@@ -55,8 +55,8 @@
 		 					<td>${sp.speaker_name}</td>
 		 					<td>${sp.speaker_job}</td>
 		 					<td>${sp.speaker_descr}</td>
-		 					<td><a href="admin/speaker/edit.do?id=${sp.id }"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a></td>
-		 					<td><a href="admin/speaker/delete.do?id=${sp.id }"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></a></td>
+		 					<td><a href="/speaker/jumpEdit.do?id=${sp.id }"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a></td>
+		 					<td><a href="/speaker/delete.do?id=${sp.id }"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></a></td>
 		 				</tr>
 	 				</c:forEach>
  				</c:if>

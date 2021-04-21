@@ -8,13 +8,8 @@
 <base href="${BaseContext }">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>视频列表 - 视频管理</title>
-<<<<<<< HEAD
 <link href="<c:url value="/static/css/bootstrap.min.css"/>" rel="stylesheet">
 <link href="<c:url value="/static/css/jquery-confirm.min.css"/>" rel="stylesheet">
-=======
-<link href="static/css/bootstrap.min.css" rel="stylesheet">
-<link href="static/css/jquery-confirm.min.css" rel="stylesheet">
->>>>>>> b2d078bd85813ed6429705882eca18a45c0751ab
 </head>
 <body>
 	<!-- 引入公用的导航信息 -->
@@ -28,7 +23,6 @@
   			<h2>视频列表 - 视频管理</h2>
 		</div>
 		<div class="row">
-<<<<<<< HEAD
 		<a href="/video/jump.do" class="btn btn-primary">添加视频</a>
 		<button class="btn btn-primary" type="button" onclick="batchDelete();">
 		  批量删除 <span class="badge" id="countSpan">0</span>
@@ -46,22 +40,6 @@
 			    	<option value="0">请选择主讲人</option>
 			    	<c:forEach items="${speakers}" var="sp">
 			    		<option <c:if test="${query.speaker_id==sp.id }">selected</c:if> value="${sp.id }">${sp.speaker_name }</option>
-=======
-		<a href="admin/video/add.do" class="btn btn-primary">添加视频</a>
-		<button class="btn btn-primary" type="button" onclick="batchDelete();">
-		  批量删除 <span class="badge" id="countSpan">0</span>
-		</button>
-		<div style="float: right;">
-			<form class="form-inline" action="admin/video/index.do" method="post">
-			  <div class="form-group">
-			    <input type="text" class="form-control" name="queryName"  value="${query.queryName }" placeholder="视频标题">
-			  </div>
-			   <div class="form-group">
-			    <select name="speakerId"  class="form-control">
-			    	<option value="0">请选择主讲人</option>
-			    	<c:forEach items="${speakers }" var="sp">
-			    		<option <c:if test="${query.speakerId==sp.id }">selected</c:if> value="${sp.id }">${sp.speakerName }</option>
->>>>>>> b2d078bd85813ed6429705882eca18a45c0751ab
 			    	</c:forEach>
 			    </select>
 			  </div>
@@ -69,7 +47,6 @@
 			  <div class="form-group">
 			    <select name="courseId" class="form-control">
 			    	<option value="0">请选择课程</option>
-<<<<<<< HEAD
 			    	<c:forEach items="${courses}" var="c">
 			    		<option  <c:if test="${query.course_id==c.id }">selected</c:if>  value="${c.id }">${c.course_name }</option>
 			    	</c:forEach>
@@ -79,27 +56,12 @@
 			</form>
 		</div>
 
-=======
-			    	<c:forEach items="${courses }" var="c">
-			    		<option  <c:if test="${query.courseId==c.id }">selected</c:if>  value="${c.id }">${c.courseName }</option>
-			    	</c:forEach>
-			    </select>
-			  </div>
-			  
-			  <button type="submit" class="btn btn-primary">查询</button>
-			</form>
-		</div>
->>>>>>> b2d078bd85813ed6429705882eca18a45c0751ab
 		</div>
 		<form action="admin/video/batchDelete.do" name="deleteForm" method="get">
 		<table class="table table-hover">
  			<thead>
  				<tr>
-<<<<<<< HEAD
  					<th><input type="checkbox" id="checkAlll" onclick="checkAll();"></th>
-=======
- 					<th><input type="checkbox" id="checkAll" onclick="checkAll();"></th>
->>>>>>> b2d078bd85813ed6429705882eca18a45c0751ab
  					<th>序号</th>
  					<th>名称</th>
  					<th>介绍</th>
@@ -112,7 +74,6 @@
  				</tr>
  			</thead>
  			<tbody>
-<<<<<<< HEAD
  				<c:if test="${not empty results}">
  					<c:forEach items="${results}" var="sp" varStatus="i">
 		 				<tr>
@@ -125,20 +86,6 @@
 		 					<td>${sp.video_length}</td>
 		 					<td>${sp.video_play_times }</td>
 		 					<td><a href="/video/echo.do?id=${sp.id }"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a></td>
-=======
- 				<c:if test="${not empty results }">
- 					<c:forEach items="${results }" var="sp" varStatus="i">
-		 				<tr>
-		 					<td><input type="checkbox" name="checkid" value="${sp.id }" onclick="countCheck();"> </td>
-		 					<td>${i.index+1 }</td>
-		 					<td>${sp.videoTitle }</td>
-		 					<td>${sp.videoDescr }</td>
-		 					<td>${sp.speakerName }</td>
-		 					<td>${sp.courseName }</td>
-		 					<td>${sp.videoLength}</td>
-		 					<td>${sp.videoPlayTimes }</td>
-		 					<td><a href="admin/video/edit.do?id=${sp.id }"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a></td>
->>>>>>> b2d078bd85813ed6429705882eca18a45c0751ab
 		 					<td><a href="#" onclick="return deleteInfo(${sp.id});"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></a></td>
 		 				</tr>
 	 				</c:forEach>
@@ -146,31 +93,17 @@
  				<c:if test="${empty results }">
  					<tr><td>当前查询结果为空!</td></tr>
  				</c:if>
-<<<<<<< HEAD
-=======
- 				
- 				
->>>>>>> b2d078bd85813ed6429705882eca18a45c0751ab
  			</tbody>
 		</table>
 	</form>
 	</div>
 
-<<<<<<< HEAD
 <script src="<c:url value="/static/js/jquery-1.12.4.min.js"/> "></script>
 <script src="<c:url value="/static/js/jquery-confirm.min.js"/>"></script>
 <script>
 	//全选
 	function checkAll(){
 		var ca = document.getElementById('checkAlll');
-=======
-<script src="static/js/jquery-1.12.4.min.js"></script>
-<script src="static/js/jquery-confirm.min.js"></script>
-<script>
-	//全选
-	function checkAll(){
-		var ca = document.getElementById('checkAll');
->>>>>>> b2d078bd85813ed6429705882eca18a45c0751ab
 		console.log("是否选中："+ca.checked);
 		var check = ca.checked;
 		//根据全选复选框的状态，来操作上边三个复选框的状态
@@ -243,13 +176,14 @@
 					btnClass:'btn-primary',
 					action:function(){
 						//根据id发送删除请求ajax
-						$.get('admin/video/delete.do',{id:id},function(data){
+						$.get('/video/delete.do',{id:id},function(data){
 							if(data.success){
 								//成功，刷新页面
 								$.alert({
 									content:'删除数据成功',
 									onAction:function(){
 										location.reload();
+										// window.location = "/admin/video/findAll.do";
 									}
 								});
 								

@@ -1,4 +1,4 @@
-package com.zhiyou.video.service.impl;
+package com.zhiyou.video.service.Impl;
 
 import com.zhiyou.video.mapper.AdminMapper;
 import com.zhiyou.video.model.Admin;
